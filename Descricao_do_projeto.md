@@ -4,13 +4,13 @@
 #### Descrição da especificação e escolha do mini micro computador:
 O projeto consiste na medição inloco e monitoramento a distância por servidor, possivelmente 
 usando protocolo de comunicação MQTT.MQTT. Medição de grandezas como tensão e corrente, e possivelmente
-comparação dos angulos de tensão e corrente, para cáculo das potências aparente, ativa e reativa
+comparação dos ângulos de tensão e corrente, para cáculo das potências aparente, ativa e reativa
 de algum sistema elétrico genérico. Através de um circuito eletrônico, e conexão de um TP e um TC 
 que devem isolar, e reduzir os sinais a um valor aceitável e seguro de tensão, para ser lido pela placa. 
 Para isso será necessário que o mini computador possua os itens abaixo:
 
 #### Opção escolhida: BeagleBoard:
-Devido ao a Raspberry não possuir conversor A/D, e o CI com conversor A/D proposto MCP3008, possuir somente 1 conversor, a leitura seria medida com atraso (somenteuma medição por vez). Optamos então pelo uso da placa beagleboard conectada a um adaptador WiFi, pois a mesma possui mais de 2 conversores A/D, o que possibilita leituras de tensão e corrente simultaneas.
+Devido ao a Raspberry não possuir conversor A/D, e o CI com conversor A/D proposto MCP3008, possuir somente 1 conversor, a leitura seria medida com atraso (somente uma medição por vez). Optamos então pelo uso da placa beagleboard conectada a um adaptador WiFi, pois esta possui mais de 2 conversores A/D, o que possibilita leituras de tensão e corrente simultaneas.
 
 - [x] Adaptador WiFi 802.11 B/G/N integrado
 - [ ] 2 Entradas analógicas (2 conversores AD integrado)
